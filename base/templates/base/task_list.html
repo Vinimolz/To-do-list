@@ -11,10 +11,13 @@
 <hr>
 <h1>My to do list</h1>
 
-
-
-
 <h2><a href="{% url 'create-task' %}">Create task</a></h2>
+
+<form action="" method="GET">
+    <input type="text" name="search-area" value="{{ search_input }}">
+    <input type="submit" value="Search">
+</form>
+
 <table>
     <tr>
         <th>Tasks:</th>
