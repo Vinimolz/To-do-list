@@ -22,14 +22,14 @@
 </div>
 
 
-<!--
-<h2><a href="{% url 'create-task' %}">Create task</a></h2>
+<div id="search-add-wrapper">
+    <form method="GET" style="margin-top: 20px;display: flex;">
+        <input type="text" name="search-area" value="{{ search_input }}">
+        <input class="button" type="submit" value="Search">
+    </form>
+    <a id="add-link" href="{% url 'create-task' %}">&#x2b;</a>
+</div>
 
-<form action="" method="GET">
-    <input type="text" name="search-area" value="{{ search_input }}">
-    <input type="submit" value="Search">
-</form>
--->
 
 <div class="task-item-wrapper">
     {% for task in tasks %}
